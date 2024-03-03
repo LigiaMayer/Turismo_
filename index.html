@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EBAC -Agencia de Turismo</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <div class="topo-menu">
+                    <div>
+                        <div class="bemvindo">
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                        </div>
+                        <button type="button">Entrar</button>
+                    </div>
+                    <div class="menu-hamburguer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="line">
+                    <span></span>
+                </div>
+                <li>
+                    <a href="#">A loja :</a>
+                    <p>Transformando sonhos em realidade ! </p>
+                </li>
+                <li>
+                    <a href="#">Destinos</a>
+                    <ul class="submenu">
+                        <li><a href="#">America</a></li>
+                        <li><a href="#">Europa</a></li>
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">Oceania</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Promoções </a>
+                    <ul class="submenu">
+                        <li><a href="#">Paris</a></li>
+                        <li><a href="#">Osaka</a></li>
+                        <li><a href="#">Paises Baixos</a></li>
+                        <li><a href="#">Sidney</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="container topo">
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1>EBAC TURISMO</h1>
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+                <div class="pesquisa">
+                <input type="search" placeholder="Digite aqui sua pesquisa">
+                <button type="submit">Pesquisar</button>
+            </div>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <section class="sobre">
+            <img src="urban-1389838_1280_resized.png"/>
+            <div>
+                <h2>Sobre a loja</h2>
+                <div class="line-section">
+                    <span></span>
+                </div>
+                <p>Descubra o mundo conosco.Nossa agência de viagens está pronta para transformar seus sonhos em realidade.
+                </p>
+                <p>O mundo espera por você</p>
+            </div>    
+        </section>
+        <section class="produtos">
+            <h2>Promoções</h2>
+            <div class="line-section">
+                <span></span>
+            </div>
+            <div class="cards">
+                <div class="destino">
+                    <a href="#">
+                        <img src="osaka (1).jpg"/>
+                        <h3>Ásia</h3>
+                        <p>Explore os mistérios e a cultura exótica do continente asiático. Roteiro 5 dias e 6 noites.</p>
+                    </a>
+                    <button type="button">Adicionar ao carrinho</button>
+                </div>
+                <div class="destino">
+                    <a href="#">
+                        <img src="./netherlands-5039354_1280.jpg"/>
+                        <h3>Paises</h3>
+                        <p>Explore a magia nesse canto do mundo que inspirou tantas histórias.</p>
+                    </a>
+                    <button type="button">Adicionar ao carrinho</button>
+                </div>
+                <div class="destino">
+                    <a href="#">
+                        <img src="/sydney-opera-house-354375_1280.jpg"/>
+                        <h3>Sydney</h3>
+                        <p>Roteiro de 5 dias com dia e café da manhã inclusos.</p>
+                    </a>
+                    <button type="button">Adicionar ao carrinho</button>
+                </div>
+                <div class="destino">
+                    <a href="#">
+                        <img src="train for ebac (1).jpeg"/>
+                        <h3>Pacote Trem ! </h3>
+                        <p>Pacote de 15 dias viajando de trem pelo leste Europeu.</p>
+                    </a>
+                    <button type="button">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy;  EBAC TURISMO- 2024</p>
+        <P>Todos os direitos reservados Ligia.</P>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-hamburguer').click(function() {
+                $('.menu').animate({width: 'toggle'});
+            })
+        })
+    </script>
+</body>
+</html>
